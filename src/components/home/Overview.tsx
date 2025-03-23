@@ -8,7 +8,10 @@ const Overview = () => {
     <section className="py-12 px-4" id="laexpo">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-cormorant text-center mb-4">
-          Tendencias, descuentos especiales y los mejores expositores, solo en Expo Tu Boda Irapuato Guanajuato
+        Descubre tendencias, descuentos exclusivos y los mejores expositores en Expo Tu Boda Irapuato.
+        </h2>
+        <h2 className="text-3xl md:text-4xl font-cormorant text-center mb-4">
+        ¡Participa en nuestra gran rifa y gana una boda de ensueño o un paquete para XV años!
         </h2>
 
         <CountdownTimer targetDate={targetDate} />
@@ -26,32 +29,15 @@ const Overview = () => {
               Asiste a la mejor Expo para organizar toda tu Boda
             </h3>
             <p className="mb-4">
-              <strong>Expo Me Caso</strong> se lleva a cabo en el WTC Ciudad de México siendo el evento que te ofrece la mayor cantidad y variedad de proveedores en México en un mismo lugar en un fin de semana. Encuentra las tendencias y la inspiración para organizar tu boda y obtén asesoría y consejos de los más prestigiados expositores para hacer de ese día algo especial y único.
+              <strong>Expo Tu Boda</strong> se lleva a cabo en Irapuato, Guanajuato, siendo el evento que te ofrece la mayor cantidad y variedad de proveedores en un mismo lugar durante un fin de semana. 
+            </p>
+
+            <p  className="mb-4">
+              Encuentra las últimas tendencias, inspírate para organizar tu boda y recibe asesoría de los expositores más prestigiados para hacer de ese día algo verdaderamente especial y único.
             </p>
             <div className="mb-6">
-              <h4 className="font-bold mb-2">BOLETOS DISPONIBLES</h4>
-              <ul className="list-disc pl-5">
-                <li className="mb-1">
-                  <a
-                    href="https://expo-me-caso-wtc-may31yjun1.boletia.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-rust hover:text-gold transition-colors"
-                  >
-                    EN LÍNEA (Antes de la expo): <strong>$150</strong>
-                  </a>
-                </li>
-                <li>EN TAQUILLA (Los días de la expo): <strong>$160</strong></li>
-              </ul>
+              <h4 className="font-bold mb-2 text-center">¡ENTRADA COMPLETAMENTE GRATIS!</h4>
             </div>
-            <a
-              href="https://expo-me-caso-wtc-may31yjun1.boletia.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-rust hover:bg-gold text-white py-3 px-6 rounded-md transition-colors self-start"
-            >
-              Boletos en Línea (Antes de la expo)
-            </a>
           </div>
         </div>
 
@@ -68,7 +54,7 @@ const Overview = () => {
             <h4 className="text-lg font-cormorant mb-1">WTC CDMX</h4>
             <p className="text-sm">Calle Filadelfia, esquina con Dakota, Benito Juárez, Col. Nápoles</p>
             <a
-              href="http://expomecaso.mx/como-llegar-a-expomecaso-wtc/"
+              href="http://ExpoTuBoda.mx/como-llegar-a-ExpoTuBoda-wtc/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-rust hover:text-gold"

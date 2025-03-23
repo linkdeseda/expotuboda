@@ -44,10 +44,9 @@ const Registration = () => {
     <section className="py-12 px-4 bg-beige bg-opacity-30" id="registro">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-cormorant text-center mb-2">
-          Regístrate para Asistir y obtener promociones y descuentos
-        </h2>
+        Regístrate y obtén la oportunidad de ganar una boda o unos XV años completamente gratis.       </h2>
         <p className="text-center text-gray-600 mb-6">
-          Recibe Información y promociones para obtener Regalos
+           ¡No dejes pasar esta increíble oportunidad!
         </p>
 
         {isSubmitted ? (

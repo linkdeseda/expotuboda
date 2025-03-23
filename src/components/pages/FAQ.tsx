@@ -10,44 +10,20 @@ const FAQ = () => {
 
   const faqItems = [
     {
-      question: '¿Dónde se lleva a cabo Expo Tu boda?',
-      answer: 'Expo Tu boda se lleva a cabo en el World Trade Center (WTC) de la Ciudad de México, ubicado en Calle Filadelfia S/N, (entre calles: Insurgentes y Dakota) Colonia Napoles, Benito Juárez, Ciudad de México CDMX, 03810.'
+      question: '¿Cuándo y dónde se llevará a cabo la Expo de bodas y XV años?',
+      answer: 'La Expo se celebrará el 4,5 y 6 de Julio del 2025 en  el Inforum de Irapuato, Guanajuato. ¡Te esperamos para disfrutar de todo lo que tenemos preparado!'
     },
     {
-      question: '¿Cuándo es la próxima edición de Expo Tu boda?',
-      answer: 'La próxima edición será los días Mayo 31 y Junio 1, 2025.'
+      question: '¿Necesito comprar boletos para asistir a la Expo?',
+      answer: 'No, nuestro evento es totalmente gratuito durante todos los días.'
     },
     {
-      question: '¿Cuál es el horario de la expo?',
-      answer: 'El horario es de 11:00 am a 8:00 pm, tanto el sábado como el domingo.'
+      question: '¿Qué tipo de proveedores estarán presentes en la Expo?',
+      answer: 'Tendremos una gran variedad de proveedores, desde diseñadores de vestidos de novia y quinceañera, fotógrafos, maquillistas, organizadores de eventos, hasta floristas, catering, decoración y mucho más. ¡Todo lo que necesitas para tu boda o XV años lo podrás encontrar aquí!'
     },
     {
-      question: '¿Cuánto cuesta la entrada?',
-      answer: 'El boleto tiene un costo de $150 pesos cuando se compra en línea antes del evento, y $160 pesos si se compra directamente en taquilla los días del evento.'
-    },
-    {
-      question: '¿Qué puedo encontrar en Expo Tu boda?',
-      answer: 'En Expo Tu boda encontrarás una amplia variedad de proveedores para tu boda, incluyendo: vestidos de novia, trajes de novio, joyería, florerías, servicios de fotografía y video, banquetes, salones, pastelería, música, decoración, y mucho más.'
-    },
-    {
-      question: '¿Habrá desfile de vestidos de novia?',
-      answer: 'Sí, habrá desfiles de vestidos de novia, pajes y trajes de novio a las 2:00 pm y 6:00 pm en ambos días del evento.'
-    },
-    {
-      question: '¿Cómo puedo llegar a la expo?',
-      answer: 'Puedes llegar en transporte público (Metro, Metrobús, etc.) o en auto particular. El WTC cuenta con estacionamiento. Para más detalles, consulta la sección "Cómo llegar" en nuestra página web.'
-    },
-    {
-      question: '¿Habrá promociones especiales durante el evento?',
-      answer: 'Sí, la mayoría de los expositores ofrecen descuentos y promociones especiales durante los días del evento. Además, tenemos la dinámica "Compra & Gana" donde puedes obtener regalos como un vestido de novia, argollas de matrimonio y un viaje.'
-    },
-    {
-      question: '¿Cómo puedo participar como expositor?',
-      answer: 'Si estás interesado en participar como expositor, puedes contactarnos a través del formulario en nuestra página web o directamente por correo a expomecaso@ovalmedia.com.mx.'
-    },
-    {
-      question: '¿Puedo comprar boletos en línea?',
-      answer: 'Sí, puedes comprar tus boletos en línea a través de Boletia con un precio preferencial de $150 pesos. El día del evento, el precio en taquilla será de $160 pesos.'
+      question: '¿Hay estacionamiento disponible en el lugar?',
+      answer: 'Sí, habrá estacionamiento disponible en el lugar del evento para los asistentes. Te recomendamos llegar temprano para asegurar tu lugar.'
     }
   ];
 
@@ -58,11 +34,15 @@ const FAQ = () => {
           <h1 className="text-4xl md:text-5xl font-cormorant text-center mb-2">
             Preguntas Frecuentes
           </h1>
-          <p className="text-center text-gray-600 mb-12">
-            Resuelve todas tus dudas sobre #ExpoMeCaso
+          <p className="text-center text-gray-600 mb-2 mt-6">
+          En #ExpoTuBoda, estamos aquí para hacer tu sueño realidad. 
           </p>
 
-          <div className="max-w-3xl mx-auto">
+          <p  className="text-center text-gray-600 mb-12">
+          Resuelve tus dudas y déjanos guiarte en este viaje hacia el día más especial de tu vida.
+          </p>
+
+          <div className="max-w-6xl mx-auto">
             {faqItems.map((item, index) => (
               <div
                 key={index}
@@ -87,28 +67,27 @@ const FAQ = () => {
             ))}
           </div>
 
-          <div className="mt-12 bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+          <div className="mt-12 bg-white p-6 rounded-lg shadow-md max-w-6xl mx-auto">
             <h2 className="text-2xl font-cormorant mb-4">
               Información del Evento
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div>
                 <h3 className="font-bold mb-2">DATOS DEL EVENTO</h3>
-                <p className="mb-1">Lugar: WTC Ciudad de México</p>
-                <p>Fecha: Mayo 31 y Junio 1, 2025</p>
+                <p className="mb-1">Lugar: Guanajuato - Irapuato</p>
+                <p className="mb-1">Av. Siglo XXI 1156, Predio Los Sauces
+                </p>
+                <p>Fecha: 4, 5 y 6 de Junio 2025</p>
               </div>
               <div>
-                <h3 className="font-bold mb-2">SOBRE LOS ORGANIZADORES</h3>
+                <h3 className="font-bold mb-2">ORGANIZADORES</h3>
                 <p>
-                  OVALMEDIA y WTC Ciudad de México unen esfuerzos para la organización de este gran evento.
+                  Un esfuerzo conjunto del Gobierno de Guanajuato y el Municipio de Irapuato para apoyar a las parejas y promover el talento local.
                 </p>
               </div>
               <div>
                 <h3 className="font-bold mb-2">CONTACTO</h3>
-                <p className="mb-1">
-                  Whatsapp: Da clic en el ícono en parte inferior derecha
-                </p>
-                <p>Correo: expomecaso@ovalmedia.com.mx</p>
+                <p>Correo: Evnt.11@hotmail.com</p>
               </div>
             </div>
           </div>

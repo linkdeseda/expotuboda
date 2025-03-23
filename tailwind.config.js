@@ -63,7 +63,7 @@ module.exports = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        brown: '#36302a',
+        brown: '#5D4037 ',
         cream: '#f9f7f6',
         rust: '#97614f',
         gold: '#c09b6a',

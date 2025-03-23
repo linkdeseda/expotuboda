@@ -18,7 +18,7 @@ const Footer = () => {
             <h3 className="text-xl font-cormorant mb-4">SOBRE LOS ORGANIZADORES</h3>
             <p className="mb-4">
               OVALMEDIA y WTC Ciudad de México unen esfuerzos para la organización de este gran evento: Expo Tu boda. Más info en la siguiente liga:
-              <Link to="/quienessomos" className="block mt-2 text-gold hover:underline">
+              <Link to="/quienes-somos" className="block mt-2 text-gold hover:underline">
                 ¿QUIENES SOMOS?
               </Link>
             </p>
@@ -28,19 +28,13 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-cormorant mb-4">UBICACIÓN Y CONTACTO</h3>
             <p className="mb-4">
-              Calle Filadelfia S/N, (entre calles: Insurgentes y Dakota) Colonia Napoles, Benito Juárez, Ciudad de México CDMX, 03810
+              Av. Siglo XXI 1156, Predio Los Sauces, 36547 Irapuato, Gto.
             </p>
             <p className="mb-2">
-              Da Clic en la liga para ver como llegar.
-              <Link to="/como-llegar-a-expomecaso-wtc" className="block mt-1 text-gold hover:underline">
-                https://expomecaso.mx/como-llegar-a-expomecaso-wtc/
-              </Link>
-            </p>
-            <p className="mb-2">
-              Whatsapp: Da Clic en ícono en parte inferior derecha y responderemos a tus mensajes.
+              Nuestro equipo de atención al cliente está listo para ayudarte. ¡Escríbenos por WhatsApp!
             </p>
             <p className="mb-4">
-              Correo: expomecaso@ovalmedia.com.mx
+              Correo: Evnt.11@hotmail.com
             </p>
           </div>
         </div>
@@ -48,7 +42,7 @@ const Footer = () => {
         {/* Social Media Links */}
         <div className="flex justify-center space-x-4 my-6">
           <a
-            href="https://www.facebook.com/expomecaso/"
+            href="https://www.facebook.com/ExpoTuBoda/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-rust w-10 h-10 rounded-full flex items-center justify-center text-white transition-all hover:bg-gold"
@@ -56,7 +50,7 @@ const Footer = () => {
             <FaFacebookF size={18} />
           </a>
           <a
-            href="https://www.instagram.com/expomecaso/"
+            href="https://www.instagram.com/ExpoTuBoda/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-rust w-10 h-10 rounded-full flex items-center justify-center text-white transition-all hover:bg-gold"
@@ -76,16 +70,6 @@ const Footer = () => {
         {/* Footer Navigation */}
         <ul className="flex flex-wrap justify-center mb-4 space-x-4">
           <li>
-            <Link to="/quienessomos" className="text-white hover:text-gold">
-              Quienes Somos?
-            </Link>
-          </li>
-          <li>
-            <Link to="/preguntas-frecuentes" className="text-white hover:text-gold">
-              Preguntas Frecuentes
-            </Link>
-          </li>
-          <li>
             <Link to="/aviso-privacidad" className="text-white hover:text-gold">
               AVISO DE PRIVACIDAD
             </Link>
@@ -94,7 +78,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="text-center text-gray-400 text-sm">
-          Expo Tu boda © 2017-2025. Todos los derechos reservados.
+          Expo Tu boda © 2025. Todos los derechos reservados.
         </p>
       </div>
     </footer>

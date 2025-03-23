@@ -1,21 +1,22 @@
 import { useState, useEffect } from 'react';
-import heroSlide1 from '../../assets/images/hero-slide-1.jpeg';
-import heroSlide2 from '../../assets/images/hero-slide-2.jpeg';
+import heroSlide1 from '../../assets/images/hero-banner-test3.jpg';
+import heroSlide2 from '../../assets/images/hero-banner-test2.jpg';
+import styles from '../styles/hero.module.css';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
       image: heroSlide1,
-      title: 'Los mejores expositores con descuentos especiales este fin de semana.',
-      subtitle: 'Irapuato Guanajuato',
-      date: ' 1,2,3 y 4 de Junio 2025'
+      title: 'Vive la experiencia más grande para planear tu boda o XV años.',
+      subtitle: 'Encuentra los mejores expositores, descuentos exclusivos y ¡mucho más!',
+      date: ' 4, 5 y 6 de Junio 2025'
     },
     {
       image: heroSlide2,
-      title: 'Mensaje bla bla bla para segundo Slider.',
-      subtitle: 'Otro mensaeje de prueba. Carlos Deseda',
-      date: ' Otra posible fecha o mensaje. Carlos Deseda'
+      title: '¡Gana una boda de ensueño o unos XV años inolvidables!',
+      subtitle: 'Regístrate y participa en nuestra gran rifa. ',
+      date: '¡Tu evento perfecto podría ser gratis!'
 
     }
   ];
@@ -24,7 +25,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 5000);
+    }, 8000);
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -64,14 +65,6 @@ const Hero = () => {
                 </h2>
                 <p className="text-lg md:text-xl mb-2">{slide.subtitle}</p>
                 <p className="text-md md:text-lg">{slide.date}</p>
-                <a
-                  href="www.gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-block bg-rust hover:bg-gold text-white py-3 px-6 rounded-md transition-colors"
-                >
-                  BOLETOS EN LÍNEA (DA CLIC AQUÍ)
-                </a>
               </div>
             </div>
           </div>
@@ -81,14 +74,14 @@ const Hero = () => {
       {/* Navigation arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-black bg-opacity-50 text-white p-2 rounded-full"
+        className={`absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-black bg-opacity-50 text-white p-2 rounded-full ${styles.previousArrowSliderHome}`}
         aria-label="Previous slide"
       >
         &#10094;
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-black bg-opacity-50 text-white p-2 rounded-full"
+        className={`absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-black bg-opacity-50 text-white p-2 rounded-full nextArrowSliderHome ${styles.nextArrowSliderHome}`}
         aria-label="Next slide"
       >
         &#10095;
@@ -110,11 +103,10 @@ const Hero = () => {
 
       {/* Ticket info box */}
       <div className="absolute bottom-12 left-4 md:left-10 z-20 bg-rust bg-opacity-90 text-white p-4 max-w-xs">
-        <h3 className="text-sm md:text-base font-bold mb-2">Fecha: Mayo 31 y Junio 1, 2025</h3>
-        <p className="text-xs md:text-sm mb-1">Lugar: WTC de la Ciudad de México</p>
-        <p className="text-xs md:text-sm font-bold">BOLETOS DISPONIBLES</p>
-        <p className="text-xs md:text-sm mb-1">EN LÍNEA (Antes de la expo): $150</p>
-        <p className="text-xs md:text-sm">EN TAQUILLA (Los días de la expo): $160</p>
+        <h3 className="text-sm md:text-base font-bold mb-2 text-center">Fecha: 4, 5 y 6 de Junio 2025</h3>
+        <p className="text-xs md:text-sm mb-1 text-center">Lugar: Guanjuato - Irapuato. Inforum</p>
+        <p className="text-xs md:text-sm font-bold text-center">¡Entrada Gratis!</p>
+
       </div>
     </div>
   );
