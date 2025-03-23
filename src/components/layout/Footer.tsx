@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-cormorant mb-4">DATOS DEL EVENTO</h3>
             <p className="mb-2">Lugar: WTC Ciudad de México</p>
-            <p>Fecha: Mayo 31 y Junio 1, 2025</p>
+            <p>Fecha: Mayo 31 y Julio 1, 2025</p>
           </div>
 
           {/* About Organizers */}

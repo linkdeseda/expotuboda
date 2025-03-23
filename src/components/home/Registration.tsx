@@ -107,7 +107,7 @@ const Registration = () => {
 
             <div className="mb-4">
               <label htmlFor="eventDate" className="block text-gray-700 text-sm font-bold mb-2">
-                Fecha de tu Evento <span className="text-red-500">*</span>
+                 Fecha de tu Evento <span className="text-red-500">*</span>
               </label>
               <input
                 type="date"
@@ -122,7 +122,7 @@ const Registration = () => {
 
             <div className="mb-4">
               <label htmlFor="state" className="block text-gray-700 text-sm font-bold mb-2">
-                Estado
+                Boda o XV años 
               </label>
               <select
                 id="state"
@@ -131,12 +131,8 @@ const Registration = () => {
                 onChange={handleChange}
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               >
-                <option value="">Selecciona tu estado</option>
-                <option value="CDMX">Ciudad de México</option>
-                <option value="Nuevo León">Nuevo León</option>
-                <option value="Jalisco">Jalisco</option>
-                <option value="Estado de México">Estado de México</option>
-                <option value="Otro">Otro</option>
+                <option value="boda">Boda</option>
+                <option value="xv">Fiesta de XV Años</option>
               </select>
             </div>
           </div>

@@ -10,7 +10,7 @@ const Hero = () => {
       image: heroSlide1,
       title: 'Vive la experiencia más grande para planear tu boda o XV años.',
       subtitle: 'Encuentra los mejores expositores, descuentos exclusivos y ¡mucho más!',
-      date: ' 4, 5 y 6 de Junio 2025'
+      date: ' 4, 5 y 6 de Julio 2025'
     },
     {
       image: heroSlide2,
@@ -103,7 +103,7 @@ const Hero = () => {
 
       {/* Ticket info box */}
       <div className="absolute bottom-12 left-4 md:left-10 z-20 bg-rust bg-opacity-90 text-white p-4 max-w-xs">
-        <h3 className="text-sm md:text-base font-bold mb-2 text-center">Fecha: 4, 5 y 6 de Junio 2025</h3>
+        <h3 className="text-sm md:text-base font-bold mb-2 text-center">Fecha: 4, 5 y 6 de Julio 2025</h3>
         <p className="text-xs md:text-sm mb-1 text-center">Lugar: Guanjuato - Irapuato. Inforum</p>
         <p className="text-xs md:text-sm font-bold text-center">¡Entrada Gratis!</p>
 

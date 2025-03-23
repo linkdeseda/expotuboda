@@ -77,7 +77,7 @@ const FAQ = () => {
                 <p className="mb-1">Lugar: Guanajuato - Irapuato</p>
                 <p className="mb-1">Av. Siglo XXI 1156, Predio Los Sauces
                 </p>
-                <p>Fecha: 4, 5 y 6 de Junio 2025</p>
+                <p>Fecha: 4, 5 y 6 de Julio 2025</p>
               </div>
               <div>
                 <h3 className="font-bold mb-2">ORGANIZADORES</h3>

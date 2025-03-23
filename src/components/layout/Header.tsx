@@ -11,11 +11,12 @@ const Header = () => {
 
   const navItems = [
     { name: 'Quiénes somos', path: '/quienes-somos' },
-    { name: 'Desfile de vestidos ', path: '/desfile-eventos' },
+    { name: 'Desfile', path: '/desfile-eventos' },
     { name: 'Expositores', path: '/expositores' },
     { name: 'Concursos', path: '/concursos' },
-    { name: 'Programación del evento', path: '/programacion' },
-    { name: 'Registro para expositores', path: '/registro' },
+    { name: 'Programación', path: '/programacion' },
+    { name: 'Expositores', path: '/registro' },
+    { name: 'Patrocinadores', path: '/registro' },
     { name: 'FAQ', path: '/preguntas-frecuentes' },
   ];
 
