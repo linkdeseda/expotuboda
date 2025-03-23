@@ -1,16 +1,17 @@
-import { ReactNode } from 'react';
+import { ReactNode, RefObject } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
 interface LayoutProps {
   children: ReactNode;
+  overviewRef?: RefObject<HTMLDivElement>; // Acepta la referencia como prop opcional
 }
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children, overviewRef }: LayoutProps) => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-grow mt-20 lg:mt-50">{children}</main>
+      <Header overviewRef={overviewRef} /> 
+      <main className="flex-grow">{children}</main>
       <Footer />
     </div>
   );

@@ -1,27 +1,43 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom'; // Importa useNavigate y useLocation
 import logo from '../../assets/images/LogoHeaderPrueba.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import styles from '../styles/header.module.css';
 
-const Header = () => {
+interface HeaderProps {
+  overviewRef?: React.RefObject<HTMLDivElement>; // Acepta la referencia como prop
+}
+
+const Header = ({ overviewRef }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate(); // Para redirigir al home
+  const location = useLocation(); // Para verificar la ruta actual
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const handleScrollToOverview = () => {
+    if (location.pathname !== '/') {
+      // Si no estamos en el home, redirigimos al home
+      navigate('/');
+      overviewRef?.current?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // Si ya estamos en el home, hacemos el scroll directamente
+      overviewRef?.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const navItems = [
-    { name: 'Quiénes somos', path: '/quienes-somos' },
+    { name: 'Quiénes somos', action: handleScrollToOverview },
     { name: 'Desfile', path: '/desfile-eventos' },
     { name: 'Expositores', path: '/expositores' },
     { name: 'Concursos', path: '/concursos' },
     { name: 'Programación', path: '/programacion' },
-    { name: 'Expositores', path: '/registro' },
-    { name: 'Patrocinadores', path: '/registro' },
+    { name: 'Patrocinadores', path: '/patrocinadores' },
     { name: 'FAQ', path: '/preguntas-frecuentes' },
   ];
 
   return (
-    <header className="bg-brown text-white fixed top-0 left-0 right-0 z-50">
+    <header className="bg-brown text-white">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <img src={logo} alt="Expo Tu boda" className={`h-12 ${styles.logoHeader}`} />
@@ -31,6 +47,8 @@ const Header = () => {
         <button
           onClick={toggleMenu}
           className="lg:hidden text-white focus:outline-none"
+          aria-label="Toggle menu"
+          aria-expanded={isMenuOpen}
         >
           {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
@@ -38,13 +56,13 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-6">
           {navItems.map((item, index) => (
-            <Link
+            <button
               key={index}
-              to={item.path}
+              onClick={item.action || (() => navigate(item.path))}
               className="text-white hover:text-beige transition-colors uppercase text-sm"
             >
               {item.name}
-            </Link>
+            </button>
           ))}
         </nav>
 
@@ -53,14 +71,13 @@ const Header = () => {
           <div className="absolute top-16 left-0 right-0 bg-brown z-50 lg:hidden py-4">
             <nav className="flex flex-col items-center space-y-4">
               {navItems.map((item, index) => (
-                <Link
+                <button
                   key={index}
-                  to={item.path}
+                  onClick={item.action || (() => navigate(item.path))}
                   className="text-white hover:text-beige transition-colors uppercase text-sm"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
-                </Link>
+                </button>
               ))}
             </nav>
           </div>
