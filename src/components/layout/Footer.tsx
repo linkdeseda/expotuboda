@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Event Details */}
           <div>
             <h3 className="text-xl font-cormorant mb-4">DATOS DEL EVENTO</h3>
-            <p className="mb-2">Lugar: WTC Ciudad de México</p>
+            <p className="mb-2">Lugar: Guanajuato - Irapuato</p>
             <p>Fecha: Mayo 31 y Julio 1, 2025</p>
           </div>
 
@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-cormorant mb-4">SOBRE LOS ORGANIZADORES</h3>
             <p className="mb-4">
-              OVALMEDIA y WTC Ciudad de México unen esfuerzos para la organización de este gran evento: Expo Tu boda. Más info en la siguiente liga:
+            Un esfuerzo conjunto del Gobierno de Guanajuato y el Municipio de Irapuato para apoyar a las parejas y promover el talento local.
               <Link to="/quienes-somos" className="block mt-2 text-gold hover:underline">
                 ¿QUIENES SOMOS?
               </Link>
@@ -58,7 +58,7 @@ const Footer = () => {
             <FaInstagram size={18} />
           </a>
           <a
-            href="https://wa.me/528126365222/"
+            href="https://wa.me/5214623735292/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-rust w-10 h-10 rounded-full flex items-center justify-center text-white transition-all hover:bg-gold"
