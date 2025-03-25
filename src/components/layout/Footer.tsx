@@ -78,7 +78,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="text-center text-gray-400 text-sm">
-          Expo Tu boda © 2025. Todos los derechos reservados.
+          Expo Boda Event © 2025. Todos los derechos reservados.
         </p>
       </div>
     </footer>

@@ -19,7 +19,9 @@ const HomePage = () => {
       <DressGallery />
       <Program />
       <Registration />
+      <div ref={patrocinadoresRef}> 
       <Patrocinadores/>
+      </div>
     </Layout>
   );
 };

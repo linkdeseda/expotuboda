@@ -17,7 +17,6 @@ const Header = ({ overviewRef }: HeaderProps) => {
 
   const handleScrollToOverview = () => {
     if (location.pathname !== '/') {
-      // Si no estamos en el home, redirigimos al home
       navigate('/');
       overviewRef?.current?.scrollIntoView({ behavior: 'smooth' });
     } else {
@@ -40,7 +39,7 @@ const Header = ({ overviewRef }: HeaderProps) => {
     <header className="bg-brown text-white">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="Expo Tu boda" className={`h-12 ${styles.logoHeader}`} />
+          <img src={logo} alt="Expo Boda Event" className={`h-12 ${styles.logoHeader}`} />
         </Link>
 
         {/* Mobile Menu Button */}

@@ -6,18 +6,21 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import patrocinador1 from '../../assets/images/patrocinadores/asiOmasrico.jpg';
 import patrocinador2 from '../../assets/images/patrocinadores/alejandroLopez.jpg';
 import patrocinador3 from '../../assets/images/patrocinadores/fanatics.jpg';
+import patrocinador4 from '../../assets/images/patrocinadores/saulMosqueda.jpeg';
+import patrocinador5 from '../../assets/images/patrocinadores/cuttingWorkShop.jpg';
 
 const Patrocinadores = () => {
   const patrocinadores = [
     patrocinador1,
     patrocinador2,
     patrocinador3,
+    patrocinador4,
+    patrocinador5,
     patrocinador1,
     patrocinador2,
     patrocinador3,
-    patrocinador1,
-    patrocinador2,
-    patrocinador3,
+    patrocinador4,
+    patrocinador5,
   ];
 
   return (

@@ -11,7 +11,7 @@ const Overview = () => {
         ¡Bienvenidos a la Expo Boda y XV Años Irapuato!
         </h2>
         <h2 className="text-3xl md:text-4xl font-cormorant text-center mb-4">
-        Descubre tendencias, descuentos exclusivos y los mejores expositores en Expo Tu Boda Irapuato.
+        Descubre tendencias, descuentos exclusivos y los mejores expositores en Expo Boda Event Irapuato.
         </h2>
 
         <CountdownTimer targetDate={targetDate} />

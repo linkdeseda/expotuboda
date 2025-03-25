@@ -1,10 +1,14 @@
 import brideDress1 from '../../assets/images/saulmosqueda.webp';
 import brideDress2 from '../../assets/images/liuliu-lenceria.jpg';
+import saulMosqueda1 from '../../assets/images/saulMosqueda/SaulMosqueda1.jpg';
+import saulMosqueda2 from '../../assets/images/saulMosqueda/SaulMosqueda2.jpg';
+import saulMosqueda3 from '../../assets/images/saulMosqueda/saulMosqueda3.jpg';
+import saulMosqueda4 from '../../assets/images/saulMosqueda/saulMosqueda4.jpg';
 
 const dressVendors = [
   { name: 'Saul Mosqueda ', image: brideDress1, link: 'https://www.instagram.com/saul_mosqueda_/' },
   { name: 'Liu Liu lenceria ', image: brideDress2, link: 'https://www.instagram.com/liuliulenceria/' },
-  
+
   // You can add more vendors as needed
 ];
 
@@ -49,44 +53,59 @@ const DressGallery = () => {
         </div>
 
         <div className="text-center mt-10">
-          <h3 className="text-2xl font-cormorant mb-4">
-            Participa: Dinámica Compra & Gana para obtener regalos.
+          <h3 className="text-3xl font-cormorant mb-4">
+            El Arte de Saul Mosqueda -  Elegancia Hecha a Medida          
           </h3>
           <p className="text-gray-600 mb-6">
-            Vestido de Novia, Argollas de Matrimonio y un Viaje de 3 días, 2 noches Todo Incluido en Riviera Maya.
+            "Cada pieza de Saul Mosqueda es una narrativa de lujo y precisión. Especializado en bodas y eventos, su visión transforma telas en obras de arte, diseñadas para quienes buscan lo extraordinario."
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="bg-white rounded shadow p-4">
-              <img
-                src={brideDress1}
-                alt="Vestido de Novia"
-                className="w-full h-32 object-cover mb-3"
-              />
-              <p className="text-sm">BridenFormal - Regala vale para tu Vestido de Novia.</p>
-            </div>
-            <div className="bg-white rounded shadow p-4">
-              <img
-                src={brideDress2}
-                alt="Argollas de Matrimonio"
-                className="w-full h-32 object-cover mb-3"
-              />
-              <p className="text-sm">Tressor Joyeros - Regala argollas de matrimonio.</p>
-            </div>
-            <div className="bg-white rounded shadow p-4">
-              <div className="w-full h-32 bg-gold mb-3 flex items-center justify-center text-white">
-                Riviera Maya
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              {/* --- Tarjeta 1: Vestido de Novia --- */}
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <img
+                  src={saulMosqueda1} // Reemplaza con tu imagen real
+                  alt="Vestido de novia diseñado por Saul Mosqueda"
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="p-4">
+                  <p className="font-semibold text-gray-800">Alta Costura para Novias</p>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Vestidos únicos con detalles artesanales que destacan tu elegancia.
+                  </p>
+                </div>
               </div>
-              <p className="text-sm">3 días, 2 noches Todo Incluido en Riviera Maya.</p>
-            </div>
-          </div>
 
-          <a
-            href="/ganadores"
-            className="inline-block mt-6 bg-rust hover:bg-gold text-white py-3 px-6 rounded-md transition-colors"
-          >
-            Consulta Bases de la Trivia
-          </a>
+              {/* --- Tarjeta 2: Traje de Gala --- */}
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <img
+                  src={saulMosqueda2}
+                  alt="Traje de gala por Saul Mosqueda"
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="p-4">
+                  <p className="font-semibold text-gray-800">Trajes para Eventos Especiales</p>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Diseños femeninos con cortes impecables y acabados de lujo.
+                  </p>
+                </div>
+              </div>
+
+              {/* --- Tarjeta 3: Moda Nupcial (o Behind the Scenes) --- */}
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <img
+                  src={saulMosqueda4}
+                  alt="Proceso creativo de Saul Mosqueda"
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="p-4">
+                  <p className="font-semibold text-gray-800">Experiencia Personalizada</p>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Desde el boceto hasta la última puntada, cada pieza cuenta tu historia.
+                  </p>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </section>
